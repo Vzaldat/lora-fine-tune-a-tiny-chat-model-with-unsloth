@@ -74,8 +74,18 @@ def trainable_fraction(trainable_count, total_count):
     # TODO: return the fraction of parameters that are trainable.
     return float(trainable_count / total_count)
 
-# Step 9 - build_instruction_examples (not yet solved)
-# TODO: implement
+# Step 9 - build_instruction_examples
+def build_instruction_examples():
+    """Return a small list of {'instruction', 'response'} dicts for SFT."""
+    # TODO: return a tiny hand-written list of instruction/response example dicts.
+    return [
+        {'instruction' : 'How could we slow down the energy depletion',
+        'response' : 'We can focus on EV and dispensible sources by saving renewables, biogas instead of fuels etc.'},
+        {'instruction' : 'How is GPT 3 better than GPT 2',
+        'response' : 'GPT 3 is post trained by RLHF with better architectural learning than GPT 2'},
+        {'instruction' : 'What is 2 + 7',
+        'response' : '0 in Z3, 1 in Z4 and Z2, 2 in Z7, 3 in Z6, 4 in Z5, and 9 in all other rings'}    
+    ]
 
 # Step 10 - format_instruction_example (not yet solved)
 # TODO: implement
