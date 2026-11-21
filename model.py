@@ -131,7 +131,7 @@ def build_training_arguments(output_dir='./sft_out', max_steps=5, learning_rate=
     return TrainingArguments(
         output_dir = output_dir,
         per_device_train_batch_size = 1,
-        num_train_epochs=max_steps,
+        max_steps=max_steps,
         learning_rate=learning_rate,
         logging_steps=1,
         fp16 = False if torch.cuda.is_bf16_supported() else True,
